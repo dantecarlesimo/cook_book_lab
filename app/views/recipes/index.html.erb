@@ -1,6 +1,8 @@
 <ul class="nav nav-pills">
   <li>
     <%= link_to('New Recipe', new_recipe_path) %>
+    <%= link_to('New ingredient', new_ingredient_path) %>
+
   </li>
 </ul>
 
@@ -14,6 +16,7 @@
       <p><%= recipe.servingsize %>
       <p><%= recipe.instructions %>
       <!--  TODO: Add code to display ingredients!å  -->
+      <!-- <p><%#= recipe.ingredientMeasurements.ingredient.name %> -->
     </div>
   </div>
 <% end %>
